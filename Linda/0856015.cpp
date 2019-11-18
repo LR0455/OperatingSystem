@@ -119,6 +119,8 @@ void write_tuple_space_to_file(){
     string content = "(";
     for (int i = 0 ; i < tuple_space.size() ; i ++)
     {                
+	if (i)
+	    content += ",";
         content += "(";
         for (int j = 0 ; j < tuple_space[i].size() ; j ++)
         {
@@ -132,7 +134,7 @@ void write_tuple_space_to_file(){
     writeFile(0, content, 0);
 }
 int main(){
-    puts("please input client number:");
+    //puts("please input client number:");
     cin >> client_num;
     client_active.resize(client_num + 1);
     client_wait.resize(client_num + 1);
@@ -153,7 +155,7 @@ int main(){
                 getline(cin, line);
                 while (true)
                 {
-                    puts("please input command:");
+                    //puts("please input command:");
                     getline(cin, line);
                     if (line == "exit")
                         exit(0);

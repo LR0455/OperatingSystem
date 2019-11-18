@@ -1,4 +1,4 @@
 all:
-	g++ Linda.cpp -o Linda -fopenmp
+	g++ 0856015.cpp -o 0856015 -fopenmp
 dbg:
-	g++ Linda.cpp -o Linda -D dbg -fopenmp
+	g++ 0856015.cpp -o 0856015 -D dbg -fopenmp
